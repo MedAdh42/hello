@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.20)
 # set project name 
 project(HelloProj VERSION 1.0)
 
-set(CMAKE_INSTALL_PREFIX "D:/ENSG/S9/SWE/hello/install")
+set(CMAKE_INSTALL_PREFIX "../install")
 
 # specify the C++ standard
 # use the CMAKE_CXX_STANDARD variable
