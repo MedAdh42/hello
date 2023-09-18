@@ -29,8 +29,7 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake --build ${{github.workspace}}/build -DCMAKE_INSTALL_PREFIX=${{github.workspace}}/install --config ${{env.BUILD_TYPE}}
-           make install  
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} && make install  
 
     - name: Test
       working-directory: ${{github.workspace}}/build
